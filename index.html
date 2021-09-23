@@ -11,9 +11,30 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<link rel="stylesheet" href="css/edit.css">
+		<script src="js/script.js"></script>
+
 	</head>
 	<body class="is-preload">
 
+		<a href="#" class="up">TOP &#8593;</a>
+		<div id="modal">
+			<div id="popup1">
+				<div class="dark"></div>
+				<img src="img/logo_pop.jpg" alt="로고디자인 팝업이미지">
+				<p>로고디자인</p>
+			</div>
+			<div id="popup2">
+				<div class="inner">
+					<div class="dark"></div>
+					<img src="img/leaflet_pop.jpg" alt="리플렛디자인 팝업이미지">
+				</div>
+			</div>
+			<div id="popup3"></div>
+			<div id="popup4"></div>
+			<div id="popup5"></div>
+			<div id="popup6"></div>
+			<div id="popup7"></div>
+		</div>
 		<!-- Header -->
 			<div id="header">
 				<div class="jb_box">
@@ -21,9 +42,9 @@
 						<h1><a href="#"><img src="img/logo.png" alt="로고이미지">로고</a></h1>
 						<nav>
 							<ul>
-								<li><a href="#">About Me</a></li>
-								<li><a href="#">My Content</a></li>
-								<li><a href="#">Contact Me</a></li>
+								<li class="nav_About"><a href="#">About Me</a></li>
+								<li class="nav_Content"><a href="#">My Content</a></li>
+								<li class="nav_Contact"><a href="#">Contact Me</a></li>
 							</ul>
 						</nav>
 					</div>
@@ -44,7 +65,7 @@
 			<div id="main">
 
 				<header class="major container medium">
-					<h2>ABOUT ME</h2>
+					<h2 class="main_h2">ABOUT ME</h2>
 					<img src="img/pict.png" alt="강혁준 증명사진">
 					<p>전문가를 꿈꾸는 신입 웹디자이너 & 퍼블리셔 강혁준입니다.</p>
 				</header>
@@ -117,9 +138,9 @@
 				</div>
 
 				<div class="box alt container">
-					<h2>MY Content</h2>
-					<section class="feature left">
-						<a href="#" class="cover"><p>자세히보기</p></a>
+					<h2 class="myc_h2">MY Content</h2>
+					<section class="feature left" class="click">
+						<a href="#popup1" class="cover c1"><p>자세히보기</p></a>
 						<a href="#" class="image"><img src="img/logo_de.jpg" alt="로고디자인 이미지" /></a>
 						<div class="content">
 							<h3>로고 디자인</h3>
@@ -127,7 +148,7 @@
 						</div>
 					</section>
 					<section class="feature right">
-						<a href="#" class="cover coverR"><p>자세히보기</p></a>
+						<a href="#popup2" class="cover coverR c2"><p>자세히보기</p></a>
 						<a href="#" class="image"><img src="img/leaflet_de.jpg" alt="리플렛디자인 이미지" /></a>
 						<div class="content">
 							<h3>리플렛 디자인</h3>
@@ -177,14 +198,15 @@
 					</header>
 
 					<ul class="clear">
-						<li><a href="#">이력서 &#183; 자소서 다운로드</a></li>
-						<li><a href="#">이메일 문의</a></li>
+						<li><a href="kangHyeokJun_intro.pdf" target="_blank">이력서 &#183; 자소서</a></li>
+						<li><a href="mailto:kaku7471@gmail.com">이메일 문의</a></li>
 					</ul>
 
 				</div>
 				<p class="copy">Copyright&#169;2021. Webdesigner.강혁준.All rights reserved.</p>
 					<p>본 사이트는 상업적 목적이 아닌 webdesigner.강혁준 개인포트폴리오 사이트로 제작되었습니다.</p>
 					<p>일부 이미지 및 폰트 등은 그 출처가 따로 있음을 밝힙니다.</p>
+
 			</div>
 
 		<!-- Scripts -->
@@ -197,7 +219,7 @@
 			<script src="js/jquery-3.2.1.min.js"></script>
 			<script src="js/jquery.easing.1.3.js"></script>
 			<script src="js/jquery.easypiechart.min.js"></script>
-		<script src="js/script.js"></script>
+			<script src="js/script.js"></script>
 
 	</body>
 </html>

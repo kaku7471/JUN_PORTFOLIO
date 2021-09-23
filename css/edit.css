@@ -8,6 +8,65 @@
   display: block;
   clear: both;
 }
+#modal > div{
+  z-index: 999999;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+#modal img{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+#popup2 img{
+  position: absolute;
+  top: 8%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+}
+#modal p{
+  position: absolute;
+  bottom: 3%;
+  left: 26.5%;
+  color: #fff;
+  z-index: 2;
+}
+#modal .dark{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+}
+.up{
+  display: block;
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  z-index: 99999;
+  color: #fff;
+  background-color: #333;
+  font-size: 20px;
+  text-decoration: none;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  text-align: center;
+  line-height: 80px;
+  transition: all 0.2s;
+}
+.up:hover{
+  transform: scale(1.2);
+  transition: all 0.2s;
+}
 #header{
   width: 100%;
   height: 986px;
