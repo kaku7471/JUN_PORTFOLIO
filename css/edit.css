@@ -28,15 +28,118 @@
   position: absolute;
   top: 8%;
   left: 50%;
-  transform: translateX(-50%);
+  width: 100%;
+  transform: translate(-50%, -8%);
   z-index: 2;
+}
+#popup2 .inner{
+  position: absolute;
+  top: 8%;
+  left: 50%;
+  width: 900px;
+  height: 800px;
+  transform: translateX(-50%);
+  overflow: scroll;
+  overflow-x: hidden;
+  z-index: 3;
+}
+#popup3 img{
+  position: absolute;
+  top: 8%;
+  left: 50%;
+  width: 100%;
+  transform: translate(-50%, -8%);
+  z-index: 2;
+}
+#popup3 .inner{
+  position: absolute;
+  top: 8%;
+  left: 50%;
+  width: 900px;
+  height: 800px;
+  transform: translateX(-50%);
+  overflow: scroll;
+  overflow-x: hidden;
+  z-index: 3;
+}
+#popup4 img{
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  width: 100%;
+  transform: translate(-50%, -2%);
+  z-index: 2;
+}
+#popup4 .inner{
+  position: absolute;
+  top: 8%;
+  left: 50%;
+  width: 1200px;
+  height: 800px;
+  transform: translateX(-50%);
+  overflow: scroll;
+  overflow-x: hidden;
+  z-index: 3;
+}
+#popup5 img{
+  position: absolute;
+  top: 8%;
+  left: 50%;
+  height: 800px;
+  transform: translate(-50%, -8%);
+  z-index: 2;
+}
+#popup6 img{
+  position: absolute;
+  top: 8%;
+  left: 50%;
+  width: 100%;
+  transform: translate(-50%, -2%);
+  z-index: 2;
+}
+#popup6 .inner{
+  position: absolute;
+  top: 8%;
+  left: 50%;
+  width: 1200px;
+  height: 800px;
+  transform: translate(-50%);
+  overflow: scroll;
+  overflow-x: hidden;
+  z-index: 3;
+}
+#popup6 a.Shortcuts{
+  display: block;
+  position: absolute;
+  top: 8%;
+  left: 10%;
+  color: #fff;
+  text-decoration: none;
+  font-size: 17px;
+  border: 1px solid #fff;
+  width: 140px;
+  text-align: center;
+  border-radius: 10px;
+  transition: all 0.5s;
+}
+#popup6 a.Shortcuts:hover{
+  background-color: #fff;
+  color: #333;
 }
 #modal p{
   position: absolute;
-  bottom: 3%;
+  bottom: 2.5%;
   left: 26.5%;
   color: #fff;
   z-index: 2;
+}
+#modal p.p1{
+  left: 18.7%;
+  bottom: 1.5%;
+}
+#modal p.p2{
+  left: 7.7%;
+  bottom: 8.2%;
 }
 #modal .dark{
   position: absolute;
@@ -44,8 +147,9 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0,0,0,0.5);
+  background-color: rgba(0,0,0,0.7);
 }
+
 .up{
   display: block;
   position: fixed;

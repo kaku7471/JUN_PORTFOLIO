@@ -55,21 +55,56 @@ $(document).ready(function(){
   });
 
   $(".c1").click(function(){ 
-    $("#popup1").fadeIn(); 
+    $("#popup1").fadeIn();
+    $('body').css("overflow", "hidden");
   }); 
-
   $(".dark").click(function(){ 
-    $("#popup1").fadeOut(); 
+    $("#popup1").fadeOut();
+    $('body').css("overflow", "scroll");
   });
 
   $(".c2").click(function(){ 
     $("#popup2").fadeIn(); 
+    $('body').css("overflow", "hidden");
   }); 
-
   $(".dark").click(function(){ 
     $("#popup2").fadeOut(); 
+    $('body').css("overflow", "scroll");
   });
 
+  $(".c3").click(function(){ 
+    $("#popup3").fadeIn(); 
+    $('body').css("overflow", "hidden");
+  }); 
+  $(".dark").click(function(){ 
+    $("#popup3").fadeOut(); 
+    $('body').css("overflow", "scroll");
+  });
 
+  $(".c4").click(function(){ 
+    $("#popup4").fadeIn(); 
+    $('body').css("overflow", "hidden");
+  }); 
+  $(".dark").click(function(){ 
+    $("#popup4").fadeOut(); 
+    $('body').css("overflow", "scroll");
+  });
 
+  $(".c5").click(function(){ 
+    $("#popup5").fadeIn(); 
+    $('body').css("overflow", "hidden");
+  }); 
+  $(".dark").click(function(){ 
+    $("#popup5").fadeOut(); 
+    $('body').css("overflow", "scroll");
+  });
+
+  $(".c6").click(function(){ 
+    $("#popup6").fadeIn(); 
+    $('body').css("overflow", "hidden");
+  }); 
+  $(".dark").click(function(){ 
+    $("#popup6").fadeOut(); 
+    $('body').css("overflow", "scroll");
+  });
 });
