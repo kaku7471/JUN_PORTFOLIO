@@ -1,10 +1,32 @@
 $(document).ready(function(){
-    $('.chart').easyPieChart({
-    easing: 'easeOutBounce',
-    onStep: function(from, to, percent) {
-      $(this.el).find('.percent').text(Math.round(percent));
-    }
-  });
+  $(function () {
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 1000) {
+          $('.self_intro').animate({opacity:'1'},2000,)
+          $('.chart').easyPieChart({
+            easing: 'easeOutBounce',
+            onStep: function(from, to, percent) {
+              $(this.el).find('.percent').text(Math.round(percent));
+            }
+          });
+        }
+    });
+});
+    
+
+  // hide #back-top first
+$("a.up").hide();
+ 
+// fade in #back-top
+$(function () {
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 100) {
+            $('a.up').fadeIn('slow');
+        } else {
+            $('a.up').fadeOut('slow');
+        }
+    });
+});
 
   $('.dw_arrow').click(function(){
 
