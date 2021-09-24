@@ -1,6 +1,6 @@
 $(document).ready(function(){
     $(window).scroll(function () {
-        if ($(this).scrollTop() > 1000) {
+        if ($(this).scrollTop() > 1300) {
             $('.chart').easyPieChart({
             easing: 'easeOutBounce',
             onStep: function(from, to, percent) {
