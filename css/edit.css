@@ -532,6 +532,9 @@
   body{
     min-width: 320px;
   }
+  #modal img{
+    width: 90%;
+  }
   #header{
     overflow: hidden;
   }

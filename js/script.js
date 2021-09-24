@@ -131,12 +131,7 @@ $(window).scroll(function () {
   });
 
 if(matchMedia("(max-width: 720px)").matches){
-  document.getElementById('section1').setAttribute('data-aos', 'fade-up')
-  document.getElementById('section2').setAttribute('data-aos', 'fade-up')
-  document.getElementById('section3').setAttribute('data-aos', 'fade-up')
-  document.getElementById('section4').setAttribute('data-aos', 'fade-up')
-  document.getElementById('section5').setAttribute('data-aos', 'fade-up')
-  document.getElementById('section6').setAttribute('data-aos', 'fade-up')
+  $('.feature').attr('data-aos', 'fade-up')
 } 
 
 window.onresize = function(){ 
