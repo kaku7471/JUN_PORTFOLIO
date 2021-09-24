@@ -16,14 +16,17 @@ AOS.init();
 
   // hide #back-top first
 $("a.up").hide();
+$(".fixedNav").hide();
  
 // fade in #back-top
 $(function () {
     $(window).scroll(function () {
         if ($(this).scrollTop() > 100) {
             $('a.up').fadeIn('slow');
+            $('.fixedNav').fadeIn('slow');
         } else {
             $('a.up').fadeOut('slow');
+            $('.fixedNav').fadeOut('slow');
         }
     });
 });
