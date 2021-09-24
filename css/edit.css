@@ -535,6 +535,22 @@
   #modal img{
     width: 90%;
   }
+  #modal p, #modal p.p1, #modal p.p2{
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 30%;
+  }
+  #modal .inner{
+    width: 95%;
+    height: 600px;
+    overflow: scroll;
+  }
+  #popup5 img{
+    width: 95%;
+    height: auto;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
   #header{
     overflow: hidden;
   }
