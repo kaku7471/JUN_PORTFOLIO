@@ -1,8 +1,7 @@
 $(document).ready(function(){
-  $(function () {
     $(window).scroll(function () {
         if ($(this).scrollTop() > 1000) {
-          $('.self_intro').animate({opacity:'1'},2000,)
+          // $('.self_intro').animate({opacity:'1'},2000,).animate({bottom:'500px'},2000,)
           $('.chart').easyPieChart({
             easing: 'easeOutBounce',
             onStep: function(from, to, percent) {
@@ -13,6 +12,7 @@ $(document).ready(function(){
     });
 });
     
+AOS.init();
 
   // hide #back-top first
 $("a.up").hide();
@@ -128,5 +128,4 @@ $(function () {
   $(".dark").click(function(){ 
     $("#popup6").fadeOut(); 
     $('body').css("overflow", "scroll");
-  });
 });
