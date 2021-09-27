@@ -554,6 +554,16 @@
     top: 50%;
     transform: translate(-50%, -50%);
   }
+  #popup6 .inner{
+    top: 8%;
+    height: 700px;
+  }
+  #popup6 img{
+    transform: translate(-50%, -7%);
+  }
+  #popup6 a.Shortcuts{
+    top: 4%;
+  }
   #header{
     overflow: hidden;
   }
