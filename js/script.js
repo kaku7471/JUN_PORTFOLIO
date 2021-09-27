@@ -130,6 +130,34 @@ $(window).scroll(function () {
     $('body').css("overflow", "scroll");
   });
 
+  $(".logo_con").click(function(){ 
+    $("#popup1_1").fadeIn();
+    $("#popup1").fadeOut();
+    $('body').css("overflow", "hidden");
+  }); 
+  $(".dark").click(function(){ 
+    $("#popup1_1").fadeOut(); 
+    $('body').css("overflow", "scroll");
+  });
+  $(".web_con").click(function(){ 
+    $("#popup4_1").fadeIn();
+    $("#popup4").fadeOut();
+    $('body').css("overflow", "hidden");
+  }); 
+  $(".dark").click(function(){ 
+    $("#popup4_1").fadeOut(); 
+    $('body').css("overflow", "scroll");
+  });
+  $(".res_con").click(function(){ 
+    $("#popup6_1").fadeIn();
+    $("#popup6").fadeOut();
+    $('body').css("overflow", "hidden");
+  }); 
+  $(".dark").click(function(){ 
+    $("#popup6_1").fadeOut(); 
+    $('body').css("overflow", "scroll");
+  });
+
 if(matchMedia("(max-width: 720px)").matches){
   $('.feature').attr('data-aos', 'fade-up')
 } 

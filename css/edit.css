@@ -36,10 +36,6 @@
 .fixedNav li:nth-child(2){
   margin: 1px 0;
 }
-/* .fixedNav li:nth-child(2){
-  border-top: 1px solid #fff;
-  border-bottom: 1px solid #fff;
-} */
 .fixedNav a{
   width: 100%;
   height: 100%;
@@ -60,12 +56,26 @@
   height: 100%;
   display: none;
 }
-#modal img{
+#modal img, #modal2 img{
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 2;
+}
+#popup1 a.logo_con{
+  display: block;
+  position: absolute;
+  top: 7.4%;
+  left: 18%;
+  color: #fff;
+  text-decoration: none;
+  font-size: 17px;
+  border: 1px solid #fff;
+  width: 140px;
+  text-align: center;
+  border-radius: 10px;
+  transition: all 0.5s;
 }
 #popup2 img{
   position: absolute;
@@ -110,7 +120,7 @@
   top: 5%;
   left: 50%;
   width: 100%;
-  transform: translate(-50%, -2%);
+  transform: translate(-50%, -2.2%);
   z-index: 2;
 }
 #popup4 .inner{
@@ -123,6 +133,20 @@
   overflow: scroll;
   overflow-x: hidden;
   z-index: 3;
+}
+#popup4 a.web_con{
+  display: block;
+  position: absolute;
+  top: 8%;
+  left: 10%;
+  color: #fff;
+  text-decoration: none;
+  font-size: 17px;
+  border: 1px solid #fff;
+  width: 140px;
+  text-align: center;
+  border-radius: 10px;
+  transition: all 0.5s;
 }
 #popup5 img{
   position: absolute;
@@ -151,10 +175,9 @@
   overflow-x: hidden;
   z-index: 3;
 }
-#popup6 a.Shortcuts{
+#popup6 a.Shortcuts, #popup6 a.res_con{
   display: block;
   position: absolute;
-  top: 8%;
   left: 10%;
   color: #fff;
   text-decoration: none;
@@ -165,26 +188,66 @@
   border-radius: 10px;
   transition: all 0.5s;
 }
-#popup6 a.Shortcuts:hover{
+#popup6 a.Shortcuts{
+  top: 8%;
+}
+#popup6 a.res_con{
+  top: 13%;
+}
+
+#modal2 > div{
+  z-index: 999999;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+#popup1_1 img, #popup4_1 img, #popup6_1 img{
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  width: 100%;
+  transform: translate(-50%, -2.2%);
+  z-index: 2;
+}
+#popup1_1 .inner, #popup4_1 .inner, #popup6_1 .inner{
+  position: absolute;
+  top: 8%;
+  left: 50%;
+  width: 1200px;
+  height: 800px;
+  transform: translateX(-50%);
+  overflow: scroll;
+  overflow-x: hidden;
+  z-index: 3;
+}
+
+#modal a:hover{
   background-color: #fff;
   color: #333;
 }
-#modal p{
+#modal p, #modal2 p{
   position: absolute;
   bottom: 2.5%;
   left: 26.5%;
   color: #fff;
   z-index: 2;
 }
+#modal2 p{
+  left: 18.7%;
+  bottom: 1.8%;
+}
 #modal p.p1{
   left: 18.7%;
-  bottom: 1.5%;
+  bottom: 15px;
 }
 #modal p.p2{
   left: 7.7%;
   bottom: 8.2%;
 }
-#modal .dark{
+#modal .dark, #modal2 .dark{
   position: absolute;
   top: 0;
   left: 0;
@@ -548,6 +611,28 @@
     height: 600px;
     overflow: scroll;
   }
+  #popup1 a.logo_con{
+    top: 220px;
+    left: 6%;
+  }
+  #popup1 p{
+    bottom: 220px
+  }
+  #popup2 p{
+    bottom: 120px
+  }
+  #popup2 .inner{
+    top: 15%;
+  }
+  #popup3 p{
+    bottom: 60px
+  }
+  #popup3 .inner{
+    top: 15%;
+  }
+  #popup4 .inner{
+    top: 15%;
+  }
   #popup5 img{
     width: 95%;
     height: auto;
@@ -555,15 +640,28 @@
     transform: translate(-50%, -50%);
   }
   #popup6 .inner{
-    top: 8%;
-    height: 700px;
+    top: 20%;
+    height: 500px;
   }
   #popup6 img{
     transform: translate(-50%, -7%);
   }
   #popup6 a.Shortcuts{
-    top: 4%;
+    top: 8%;
   }
+  #modal p.p1{
+    bottom: 120px
+  }
+
+  #popup1_1 .inner, #popup4_1 .inner, #popup6_1 .inner{
+    width: 80%;
+    height: 80%;
+  }
+  #modal2 p{
+    left: 27%;
+    bottom: 7%;
+  }
+
   #header{
     overflow: hidden;
   }
