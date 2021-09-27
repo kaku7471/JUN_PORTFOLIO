@@ -206,10 +206,10 @@
 }
 #popup1_1 img, #popup4_1 img, #popup6_1 img{
   position: absolute;
-  top: 5%;
+  top: 8%;
   left: 50%;
   width: 100%;
-  transform: translate(-50%, -2.2%);
+  transform: translate(-50%, -0.9%);
   z-index: 2;
 }
 #popup1_1 .inner, #popup4_1 .inner, #popup6_1 .inner{
