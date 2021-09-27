@@ -150,11 +150,25 @@
 }
 #popup5 img{
   position: absolute;
-  top: 8%;
+  top: 20%;
   left: 50%;
-  height: 800px;
+  height: 600px;
   transform: translate(-50%, -8%);
   z-index: 2;
+}
+#popup5 a.blog_sc{
+  display: block;
+  position: absolute;
+  top: 15%;
+  left: 10%;
+  color: #fff;
+  text-decoration: none;
+  font-size: 17px;
+  border: 1px solid #fff;
+  width: 140px;
+  text-align: center;
+  border-radius: 10px;
+  transition: all 0.5s;
 }
 #popup6 img{
   position: absolute;
@@ -244,8 +258,8 @@
   bottom: 15px;
 }
 #modal p.p2{
-  left: 7.7%;
-  bottom: 8.2%;
+  left: 18.2%;
+  bottom: 15%;
 }
 #modal .dark, #modal2 .dark{
   position: absolute;
@@ -638,6 +652,10 @@
     height: auto;
     top: 50%;
     transform: translate(-50%, -50%);
+  }
+  #popup5 a.blog_sc{
+    top: 32%;
+    left: 5%;
   }
   #popup6 .inner{
     top: 20%;
